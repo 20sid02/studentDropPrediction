@@ -1,2 +1,51 @@
-# studentDropPrediction
-Student Dropout Prediciton using Random Forest
+# 🎓 Student Dropout Prediction
+
+A machine learning project to predict whether a student will **drop out**, remain **enrolled**, or **graduate**, based on academic performance and demographic data.
+
+## 📊 Dataset
+
+- **Source**: [Unnamed Portuguese Higher Education Institute]([https://archive.ics.uci.edu/dataset/697](https://www.kaggle.com/datasets/adilshamim8/predict-students-dropout-and-academic-success/data))
+- **Records**: Student's personal, academic and some external data.
+- **Target Classes**: `Dropout`, `Enrolled`, `Graduate`
+
+## 🧠 Problem Statement
+
+Educational institutions face challenges in identifying students at risk of dropping out. This project builds a classification model to predict student outcomes and assist in early intervention.
+
+---
+
+## 🔧 Tools & Technologies
+
+- Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
+- Random Forest Classifier, XGBoost
+- GridSearchCV for hyperparameter tuning
+- Confusion Matrix, Accuracy, and Cross-validation
+
+---
+
+## 📈 Workflow
+
+1. **Exploratory Data Analysis (EDA)**
+2. **Feature Engineering**
+   - Derived metrics: Approval rates, Grade averages
+   - Feature selection using importance scores
+3. **Model Training**
+   - Grid search to optimize `n_estimators`, `max_depth`, `min_samples_split`, etc.
+   - Trained on top 20 most important features
+4. **Evaluation**
+   - Test Accuracy: **76.6%**
+   - Cross-validation Accuracy: **77.4%**
+   - Analyzed confusion matrix for class-wise performance
+
+---
+
+## 📌 Results
+
+| Metric         | Score     |
+|----------------|-----------|
+| Test Accuracy  | 76.6%     |
+| CV Accuracy    | 77.4%     |
+| Best Model     | Random Forest (Tuned) |
+
+### Confusion Matrix (Test Set)
+
