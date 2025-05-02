@@ -17,9 +17,9 @@ Educational institutions face challenges in identifying students at risk of drop
 ## 🔧 Tools & Technologies
 
 - Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
-- Random Forest Classifier, XGBoost
+- Random Forest Classifier
 - GridSearchCV for hyperparameter tuning
-- Confusion Matrix, Accuracy, and Cross-validation
+- Evaluation metrics: Confusion Matrix, Accuracy, Cross-Validation
 
 ---
 
@@ -27,15 +27,15 @@ Educational institutions face challenges in identifying students at risk of drop
 
 1. **Exploratory Data Analysis (EDA)**
 2. **Feature Engineering**
-   - Derived metrics: Approval rates, Grade averages
+   - Derived metrics: Approval rates, grade averages, etc.
    - Feature selection using importance scores
 3. **Model Training**
-   - Grid search to optimize `n_estimators`, `max_depth`, `min_samples_split`, etc.
-   - Trained on top 20 most important features
+   - Grid search to optimize hyperparameters (`n_estimators`, `max_depth`, `min_samples_split`, etc.)
+   - Training on the top 20 most important features
 4. **Evaluation**
-   - Test Accuracy: **76.6%**
-   - Cross-validation Accuracy: **77.4%**
-   - Analyzed confusion matrix for class-wise performance
+   - **Test Accuracy**: **76.6%**
+   - **Cross-Validation Accuracy**: **77.4%**
+   - Analysis using a confusion matrix for class-wise performance
 
 ---
 
@@ -49,3 +49,22 @@ Educational institutions face challenges in identifying students at risk of drop
 
 ### Confusion Matrix (Test Set)
 
+```
+[[237  28  51]
+ [ 37  51  63]
+ [ 11  17 390]]
+```
+
+---
+
+## 🚀 Future Improvements
+
+- Experiment with ensemble methods (Voting, Stacking)
+- Investigate feature explanations using SHAP
+- Deploy the model with a Streamlit dashboard for real-time predictions
+
+---
+
+## 🧑‍💻 Author
+
+**Siddharth Mahajan**  
